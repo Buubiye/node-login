@@ -46,6 +46,51 @@ app.use(session({
 	})
 );
 
+// ------------------------------this the code i want you to fix-----------------------------
+
+
+
+
+//recieve from client 
+var reciver = $('#inputx').value;
+var amount = $('#inputy').value;
+var sender = this.user();
+var user = this.user();
+
+$("#submit").click(function(){
+	
+ db.recived({reciever.balance + amount});
+ db.sent({sender.balance - amount});
+
+         var db.reciever.collection({
+
+             recorder.insertMany({"you recived" + date + "from" + sender + "your balance is" + balance})
+
+        });
+
+        var db.sender.collection({
+
+             recorder.insertMany({"you recived" + date + "from" + reciever + "your balance is" + balance})
+
+         });
+
+}
+//fetch every time user logs in
+
+server.post({
+
+     // when the user logs in get the user email and then fetch his account's balance
+
+    $('#divx').value = db.user.balance();
+
+	//when the user logs in fetch his transaction recorder
+	
+	$('#divy').value = db.user.recorder();
+});
+
+
+//------------------ the end of the code i want you to fix -------------------
+
 require('./app/server/routes')(app);
 
 http.createServer(app).listen(app.get('port'), function(){
